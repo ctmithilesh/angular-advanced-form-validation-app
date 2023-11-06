@@ -1,0 +1,38 @@
+<div class="form">
+    <h3> Contact Us </h3>
+      <form [formGroup]="contactForm" (ngSubmit)="submitData()">
+        <label> Your Name </label>
+        <input
+          type="text"
+          placeholder="Enter Name"
+          class="input"
+          name="name"
+          formControlName="name"
+          >
+          <span *ngIf="name?.invalid">Name is required!</span>
+          <br />
+
+          <label> Your Email </label>
+          <input
+          type="email"
+          formControlName="email"
+          id=""
+          placeholder="Enter email"
+          class="input"
+          >
+          <span *ngIf="email?.invalid">Email is required!</span>
+          <br />
+          <label> Designation </label>
+          <select class="input" formControlName="designation">
+            <option>Developer</option>
+            <option>Architect</option>
+            <option>Manager</option>
+          </select>
+          <br />
+          <button
+            class="btn"
+            type="submit"
+            [disabled]="contactForm.invalid"
+          > Submit </button>
+      </form>
+  </div>

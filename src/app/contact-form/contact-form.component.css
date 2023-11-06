@@ -1,0 +1,23 @@
+.form{
+  background-color: lightcyan;
+  margin:1rem;
+  padding:1rem;
+  height: auto;
+  width: auto;
+}
+
+
+.input{
+  margin:1rem;
+  padding:1rem;
+  width:max-content;
+
+}
+
+.btn{
+  margin:1rem;
+  padding:1rem;
+}
+
+/* write css to center the div */
+
